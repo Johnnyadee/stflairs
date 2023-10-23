@@ -1,10 +1,3 @@
-/**
- * Template Name: Sailor
- * Updated: Sep 18 2023 with Bootstrap v5.3.2
- * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
- * Author: BootstrapMade.com
- * License: https://bootstrapmade.com/license/
- */
 (function () {
   "use strict";
 
@@ -77,7 +70,7 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = ` <header id="header" class="fixed-top d-flex align-items-center">
       <div class="container d-flex align-items-center">
-        <a href="index.html" class="logo "><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="index.html" class="logo "><img src="assets/img/logo.png" style="width:50px; height:200px" alt="" class="img-fluid"></a>
         <h1 class="logo me-auto"><a href="index.html">Saint Flairs Awards</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- -->
@@ -104,9 +97,9 @@ class Header extends HTMLElement {
                 </li> -->
               </ul>
             </li>
-            <li><a href="services.html" id="products">Our Products</a></li>
-            <li><a href="#" id="moments">Golden Moments</a></li>
-            <li><a href="#" class="getstarted">Contact us</a></li>
+            <li><a href="ourproducts.html" id="products">Our Products</a></li>
+            <li><a href="goldenmoments.html" id="moments">Golden Moments</a></li>
+            <li><a href="contact.html" class="getstarted">Contact us</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
@@ -290,7 +283,7 @@ class Footer extends HTMLElement {
                 <h4>Saint Flairs Global Awards <br />|| Port Harcourt Office</h4>
                 <p>
                   607B, Ikwere Road,<br />
-                  By MCC, Port Harcourt<br />FCT Abuja.<br />
+                  By MCC, Port Harcourt<br />Rivers State.<br />
                   <strong>Phone:</strong> 08036750060, 08023115584<br />
                   <strong>Email:</strong> stflairsabuja@yahoo.com<br />
                 </p>
@@ -317,7 +310,7 @@ class Footer extends HTMLElement {
           <!-- You can delete the links only if you purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/sailor-free-bootstrap-theme/ -->
-          Designed by <a href="#">Engr Obinna Martins</a>
+          Designed by <a href="#">Digital Oxygen</a>
         </div>
       </div>
     </footer>

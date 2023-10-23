@@ -290,7 +290,7 @@ class Footer extends HTMLElement {
                 <h4>Saint Flairs Global Awards <br />|| Port Harcourt Office</h4>
                 <p>
                   607B, Ikwere Road,<br />
-                  By MCC, Port Harcourt<br />FCT Abuja.<br />
+                  By MCC, Port Harcourt<br />Rivers State.<br />
                   <strong>Phone:</strong> 08036750060, 08023115584<br />
                   <strong>Email:</strong> stflairsabuja@yahoo.com<br />
                 </p>
@@ -317,7 +317,7 @@ class Footer extends HTMLElement {
           <!-- You can delete the links only if you purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/sailor-free-bootstrap-theme/ -->
-          Designed by <a href="#">Engr Obinna Martins</a>
+          Designed by <a href="#">Digital Oxygen</a>
         </div>
       </div>
     </footer>

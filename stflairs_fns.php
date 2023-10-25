@@ -42,13 +42,7 @@
         $sql = "SELECT * FROM $entity";
 		$result = mysqli_query($conn,$sql);
 
-        $total_amount =0.0;
-		
-        while($row =mysqli_fetch_array($result)){
-            $total_amount= $total_amount + $row['total_amount'];
-        }
-
-        return $total_amount;
+        return mysqli_num_rows($result);
     }
 
     function getExpenseTitle($catid,$conn){

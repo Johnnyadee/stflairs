@@ -24,11 +24,11 @@
 	
 	
 	// Retrieve total number of categories
-	$total_noof_category = getTotalNoOfEntity('categories',$conn);
+	$num_of_categories = getTotalNoOfEntity('category',$conn);
+	$num_of_products = getTotalNoOfEntity('product',$conn);
 
-	$num_of_productions = getStatistics('production',$conn);
-	$total_expenses= getAmountSummation('expenses',$conn);
-	$num_of_sales = getStatistics('sales',$conn);
+	// $num_of_slides = getTotalNoOfEntity('slide',$conn);
+	// $num_of_sales = getStatistics('sales',$conn);
 
 	//get the last three deposit transactions by this particluar user
 	$sales = getAllSales($conn);
@@ -131,28 +131,18 @@
       <div class="row">
 
         <div class="col-md-6 col-lg-3">
-          <div class="widget-small primary coloured-icon"><i class="icon fa fa-bank fa-3x"></i>
+          <div class="widget-small primary coloured-icon"><i class="icon fa fa-hashtag fa-3x"></i>
             <div class="info">
-                <h5 style="font-size:14px"> Total No. Of Category </h5> <h5><?php  echo $num_of_productions ?></h5>        
+                <h5 style="font-size:14px"> No. Of Categories </h5> <h5><?php  echo $num_of_categories ?></h5>        
             </div>
           </div>
         </div>
         
         <div class="col-md-6 col-lg-3">
-          <div class="widget-small warning coloured-icon"><i class="icon fa fa-dollar fa-3x"></i>
+          <div class="widget-small warning coloured-icon"><i class="icon fa fa-hashtag fa-3x"></i>
             <div class="info">
-              <h5 style="font-size:14px">Total Expenses</h5>
-              <h5>N
-				  <?php 
-				  	if(!empty($total_expenses)){
-				  		echo  number_format($total_expenses,2); 
-					  }
-					  else{
-						  echo number_format(0,2);
-					  } 
-				  ?>
-
-				</h5>
+              <h5 style="font-size:14px">No. Of Products</h5>
+              <h5><?php  echo $num_of_products; ?></h5>
             </div>
           </div>
         </div>
@@ -160,18 +150,8 @@
         <div class="col-md-6 col-lg-3">
           <div class="widget-small info coloured-icon"><i class="icon fa fa-thumbs-o-up fa-3x"></i>
             <div class="info">
-              <h5 style="font-size:14px">Total Sales</h5>
-              <h5>N
-				  <?php 
-				  	if(!empty($total_sales)){
-				  		echo  number_format($total_sales,2); 
-					  }
-					  else{
-						  echo number_format(0,2);
-					  } 
-				  ?>
-
-				</h5>
+              <h5 style="font-size:14px">Number of Slides</h5>
+              <h5><?php echo $num_of_slides; ?></h5>
             </div>
           </div>
         </div>

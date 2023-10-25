@@ -70,20 +70,20 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = ` <header id="header" class="fixed-top d-flex align-items-center">
       <div class="container d-flex align-items-center">
-        <a href="index.html" class="logo "><img src="assets/img/logo.png" style="width:50px; height:200px" alt="" class="img-fluid"></a>
+        <a href="index.php" class="logo "><img src="assets/img/logo.png" style="width:50px; height:200px" alt="" class="img-fluid"></a>
         <h1 class="logo me-auto"><a href="index.html">Saint Flairs Awards</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- -->
 
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a href="index.html" id="home">Home</a></li>
+            <li><a href="index.php" id="home">Home</a></li>
 
             <li class="dropdown">
               <a href="#" id="about"><span>About</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="about.html#team">Team</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="about.php#team">Team</a></li>
 
                 <!-- <li class="dropdown">
                   <a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
@@ -97,9 +97,9 @@ class Header extends HTMLElement {
                 </li> -->
               </ul>
             </li>
-            <li><a href="ourproducts.html" id="products">Our Products</a></li>
-            <li><a href="goldenmoments.html" id="moments">Golden Moments</a></li>
-            <li><a href="contact.html" class="getstarted">Contact us</a></li>
+            <li><a href="ourproducts.php" id="products">Our Products</a></li>
+            <li><a href="goldenmoments.php" id="moments">Golden Moments</a></li>
+            <li><a href="contact.php" class="getstarted">Contact us</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>

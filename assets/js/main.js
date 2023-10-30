@@ -66,12 +66,12 @@
     onscroll(document, toggleBacktotop);
   }
 
-class Header extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = ` <header id="header" class="fixed-top d-flex align-items-center">
+  class Header extends HTMLElement {
+    connectedCallback() {
+      this.innerHTML = ` <header id="header" class="fixed-top d-flex align-items-center">
       <div class="container d-flex align-items-center">
         <a href="index.php" class="logo "><img src="assets/img/logo.png" style="width:50px; height:200px" alt="" class="img-fluid"></a>
-        <h1 class="logo me-auto"><a href="index.html">Saint Flairs Awards</a></h1>
+        <h1 class="logo me-auto"><a href="index.php">Saint Flairs Awards</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- -->
 
@@ -106,9 +106,9 @@ class Header extends HTMLElement {
         <!-- .navbar -->
       </div>
     </header>`;
+    }
   }
-}
-customElements.define("main-header", Header);
+  customElements.define("main-header", Header);
   /**
    * Mobile nav toggle
    */
@@ -230,7 +230,6 @@ customElements.define("main-header", Header);
     });
   }
 })();
-
 
 class Footer extends HTMLElement {
   connectedCallback() {

@@ -48,7 +48,7 @@
       <section id="breadcrumbs" class="breadcrumbs">
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
-            <h2>Golden Moments</h2>
+            <h2>Our Golden Moments</h2>
             <ol>
               <li><a href="index.html">Home</a></li>
               <li>Golden Moments</li>
